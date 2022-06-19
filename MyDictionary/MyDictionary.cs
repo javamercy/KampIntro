@@ -69,5 +69,15 @@ namespace MyDictionary
             get { return _keyArray.Length; }
         }
 
+        public K[] Keys
+        {
+            get { return _keyArray; }
+        }
+
+        public V[] Values
+        {
+            get { return _valueArray; }
+
+        }
     }
 }

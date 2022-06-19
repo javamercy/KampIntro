@@ -16,11 +16,21 @@ namespace MyDictionary
             
 
             MyDictionary<string, int> myCustomers = new MyDictionary<string, int>();
-            myCustomers.Add("Emrecan", 1);
-            myCustomers.Add("Ahmet", 1);
-            myCustomers.Add("Engin", 1);
+            myCustomers.Add("Emrecan", 2);
+            myCustomers.Add("Ahmet", 23);
+            myCustomers.Add("Engin", 101);
 
             Console.WriteLine(myCustomers.Count);
+            foreach (var key in myCustomers.Keys)
+            {
+                Console.WriteLine("Key: " + key);
+            }
+
+            foreach (var value in myCustomers.Values)
+            {
+                Console.WriteLine("Value: " + value);
+            }
+
         }
     }
 }
